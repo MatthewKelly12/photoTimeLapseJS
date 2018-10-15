@@ -8,11 +8,15 @@ let c = canvas.getContext('2d')
 
 
 // COUNTER
-let counter = 3
+let counter = 1
 // CREATE COUNTER FOR IMG NAMES AND PATH
-let picNum = 3
+let picNum = 1
 // PIC
 let pic = 'Microgreen Mix Test Wed'
+// PIC TYPE
+let picType = 'jpeg'
+
+
 
 // FUNCTION THAT ANIMATES ALL THINGS ON CANVAS
 animate = () => {
@@ -23,7 +27,7 @@ animate = () => {
 	let testImg = new Image()
 	// ADD SOURCE PATH TO NEW IMAGE WITH A VARIABLE
 	// TO BE USED AS A COUNTER TO SWITCH IMAGES
-	testImg.src = `images/${pic}${picNum}.jpeg`
+	testImg.src = `images/${pic}${picNum}.${picType}`
 	// DRAW IMAGE
 	c.drawImage(testImg, 400, 100, 400, 400)
 	// INCREASE COUNTER EVERY FRAME
