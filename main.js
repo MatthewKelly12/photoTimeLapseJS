@@ -8,15 +8,14 @@ let c = canvas.getContext('2d')
 
 
 // COUNTER
-let counter = 1
+let counter = 3
 // CREATE COUNTER FOR IMG NAMES AND PATH
-let picNum = 1
+let picNum = 3
 
 // FUNCTION THAT ANIMATES ALL THINGS ON CANVAS
 animate = () => {
 	// CREATE ANIMATION LOOP BY CALLING ANIMATE INSIDE ITSELF
 	requestAnimationFrame(animate)
-
 
 	// CREATE NEW IMAGE AND SET TO VARIABLE
 	let testImg = new Image()
