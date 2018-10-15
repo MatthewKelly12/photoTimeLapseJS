@@ -15,7 +15,12 @@ let picNum = 1
 let pic = 'Microgreen Mix Test Wed'
 // PIC TYPE
 let picType = 'jpeg'
-
+// IMAGE WIDTH AND HEIGHT
+let imgWidth = '400'
+let imgHeight = '400'
+// IMG X AND Y COORDINATES
+let imgX = '400'
+let imgY = '100'
 
 
 // FUNCTION THAT ANIMATES ALL THINGS ON CANVAS
@@ -29,7 +34,7 @@ animate = () => {
 	// TO BE USED AS A COUNTER TO SWITCH IMAGES
 	testImg.src = `images/${pic}${picNum}.${picType}`
 	// DRAW IMAGE
-	c.drawImage(testImg, 400, 100, 400, 400)
+	c.drawImage(testImg, imgX, imgY, imgWidth, imgHeight)
 	// INCREASE COUNTER EVERY FRAME
 	counter++
 	// SWITCH IMAGES IF COUNTER DIVIDED BY 3 IS 0 (EVERY THIRD FRAME)
